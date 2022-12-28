@@ -14,28 +14,29 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+<form action="post">
 <div class="container">
 <div class="row">
 	<div class="col-md-4">
 	<div class="form-group">
-		<lable for="form-lable" class="first-name-input" >First Name</lable>
-		<input type="text" class="form-control" id="first-name-input" required>
-		<div class="invalid-feedback"></div>
+		<lable class="form-lable" for="first-name-input">First Name</lable>
+		<input type="text" name="name"class="form-control" id="first-name-input" required>
+		<div class="invalid-feedback">first name required.</div>
   </div>
 </div>
 <div class="col-md-4">
    <div class="form-group">
-		<lable for="form-lable" class="last-name-input">Last Name</lable>
+		<lable class="form-lable" for="last-name-input">Last Name</lable>
 		<input type="text" class="form-control" id="last-name-input" required>
-		<div class="invalid-feedback"></div>
+		<div class="invalid-feedback"> Last name required.</div>
    </div>
 </div>
 <div class="col-md-4">
    <div class="form-group">
 	
-		<lable for="form-lable" class="email-input" >Email</lable>
+		<lable class="form-lable" for="email-input" >Email</lable>
 		<input type="email" class="form-control" id="email-input" required>
-		<div class="invalid-feedback"></div>
+		<div class="invalid-feedback">Email required.</div>
   </div>
   </div>
 </div>
@@ -43,41 +44,44 @@
 <div class="row">
 	<div class="col-md-6">
 	<div class="form-group">
-		<lable for="form-lable" class="college-input" >College</lable>
+		<lable class="form-lable" for="college-input" >College</lable>
 		<input type="text" class="form-control" id="college-input" required>
-		<div class="invalid-feedback"></div>
+		<div class="invalid-feedback">Please provide a valid college.</div>
   </div>
 </div>
 
 <div class="col-md-3">
    <div class="form-group">
 		<lable for="grad-year-select" class="form-lable">Graduation Year</lable>
-		<select class="form-select form-control" id="grad-year-select">
+		<select class="form-select form-control" id="grad-year-select" required>
 			<option selected>Choose...</option>
 			<option value="1">2020</option>
 			<option value="2">2021</option>
 			<option value="3">2022</option>
 			<option value="3">2023</option>
 		  </select>
+		  <div class="invalid-feedback">Please select a valid Graduation Year.</div>
    </div>
 </div>
 <div class="col-md-3">
    <div class="form-group">
 	
-		<lable for="form-lable" class="roll-no-input" >Roll No.</lable>
-		<input type="email" class="form-control" id="roll-no-input" required>
-		<div class="invalid-feedback"></div>
+		<lable class="form-lable" for="roll-no-input">Roll No.</lable>
+		<input type="text" class="form-control" id="roll-no-input" required>
+		<div class="invalid-feedback">Please provide a valid Roll no.</div>
   </div>
   </div>
   <div class="col-md-12">
-  <input class="form-check-input" value="Agree" type="checkbox" id="condition-checkbox">Agree to terms and conditions. You must agree before submitting.
-  <label for="condition-checkbox" class="form-check-label"></label>
+  <input class="form-lable" value="Agree" type="checkbox" id="conditions-checkbox" required>Agree to terms and conditions. You must agree before submitting.
+  <label for="conditions-checkbox" class="form-label"></label>
 </div>
 <div class="col-12">
-	<button class="btn btn-primary">Submit Form</button>
+	<button type="submit" class="btn btn-primary">Submit Form</button>
 </div>
 </div>
+</form>
 </div>
+
 </body>
 
 </html>
