@@ -4,13 +4,80 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+<div class="container">
+<div class="row">
+	<div class="col-md-4">
+	<div class="form-group">
+		<lable for="form-lable" class="first-name-input" >First Name</lable>
+		<input type="text" class="form-control" id="first-name-input" required>
+		<div class="invalid-feedback"></div>
+  </div>
+</div>
+<div class="col-md-4">
+   <div class="form-group">
+		<lable for="form-lable" class="last-name-input">Last Name</lable>
+		<input type="text" class="form-control" id="last-name-input" required>
+		<div class="invalid-feedback"></div>
+   </div>
+</div>
+<div class="col-md-4">
+   <div class="form-group">
+	
+		<lable for="form-lable" class="email-input" >Email</lable>
+		<input type="email" class="form-control" id="email-input" required>
+		<div class="invalid-feedback"></div>
+  </div>
+  </div>
+</div>
 
+<div class="row">
+	<div class="col-md-6">
+	<div class="form-group">
+		<lable for="form-lable" class="college-input" >College</lable>
+		<input type="text" class="form-control" id="college-input" required>
+		<div class="invalid-feedback"></div>
+  </div>
+</div>
+
+<div class="col-md-3">
+   <div class="form-group">
+		<lable for="grad-year-select" class="form-lable">Graduation Year</lable>
+		<select class="form-select form-control" id="grad-year-select">
+			<option selected>Choose...</option>
+			<option value="1">2020</option>
+			<option value="2">2021</option>
+			<option value="3">2022</option>
+			<option value="3">2023</option>
+		  </select>
+   </div>
+</div>
+<div class="col-md-3">
+   <div class="form-group">
+	
+		<lable for="form-lable" class="roll-no-input" >Roll No.</lable>
+		<input type="email" class="form-control" id="roll-no-input" required>
+		<div class="invalid-feedback"></div>
+  </div>
+  </div>
+  <div class="col-md-12">
+  <input class="form-check-input" value="Agree" type="checkbox" id="condition-checkbox">Agree to terms and conditions. You must agree before submitting.
+  <label for="condition-checkbox" class="form-check-label"></label>
+</div>
+<div class="col-12">
+	<button class="btn btn-primary">Submit Form</button>
+</div>
+</div>
+</div>
 </body>
 
 </html>
