@@ -22,14 +22,14 @@
 <div class="row">
 	<div class="col-md-4">
 	<div class="form-group">
-		<lable class="form-lable" for="first-name-input">First Name</lable>
+		<label class="form-lable" for="first-name-input">First Name</label>
 		<input type="text" name="name"class="form-control" id="first-name-input" required>
 		<div class="invalid-feedback">first name required.</div>
   </div>
 </div>
 <div class="col-md-4">
    <div class="form-group">
-		<lable class="form-lable" for="last-name-input">Last Name</lable>
+		<label class="form-label" for="last-name-input">Last Name</label>
 		<input type="text" class="form-control" id="last-name-input" required>
 		<div class="invalid-feedback"> Last name required.</div>
    </div>
@@ -37,7 +37,7 @@
 <div class="col-md-4">
    <div class="form-group">
 	
-		<lable class="form-lable" for="email-input" >Email Adrress</lable>
+		<label class="form-label" for="email-input" >Email Address</label>
 		<input type="email" class="form-control" id="email-input" required>
 		<div class="invalid-feedback">Email required.</div>
   </div>
@@ -47,7 +47,7 @@
 <div class="row">
 	<div class="col-md-6">
 	<div class="form-group">
-		<lable class="form-lable" for="college-input" >College</lable>
+		<label class="form-label" for="college-input" >College</label>
 		<input type="text" class="form-control" id="college-input" required>
 		<div class="invalid-feedback">Please provide a valid college.</div>
   </div>
@@ -55,7 +55,7 @@
 
 <div class="col-md-3">
    <div class="form-group">
-		<lable for="grad-year-select" class="form-lable">Graduation Year</lable>
+		<label for="grad-year-select" class="form-label">Graduation Year</label>
 		<select class="form-select form-control" id="grad-year-select" required>
 			<option selected>Choose...</option>
 			<option value="1">2020</option>
@@ -69,15 +69,17 @@
 <div class="col-md-3">
    <div class="form-group">
 	
-		<lable class="form-lable" for="roll-no-input">Roll No.</lable>
+		<label class="form-label" for="roll-no-input">Roll No.</label>
 		<input type="text" class="form-control" id="roll-no-input" required>
 		<div class="invalid-feedback">Please provide a valid Roll no.</div>
   </div>
   </div>
   <div class="col-md-12">
-  <input class="form-lable" value="Agree" type="checkbox" id="conditions-checkbox" required>Agree to terms and conditions. You must agree before submitting.
-  <label for="form-check-input" class="form-label"></label>
+  <input class="form-label" value="Agree" type="checkbox" id="conditions-checkbox" required>
+  <label for="conditions-checkbox" class="form-check-label">Agree to terms and conditions. You must agree before submitting.</label>
+  <div class="invalid-feedback">Please provide a valid Roll no.</div>
 </div>
+
 <div class="col-12">
 	<button type="submit" class="btn btn-primary">Submit Form</button>
 </div>
